@@ -1,0 +1,18 @@
+LEETCODE PROBLEM :- Single Number
+
+Approaches :-
+1) Using Nested Loop , TC-> O(NxN)
+2) Using Sorting , TC -> o(NlogN)
+3) Using XOR , TC -> O(N)
+class Solution {
+ public:
+      int singleNumber(vector<int>& nums){
+          int ans = 0;
+          for(int i = 0;i<nums.size();i++)
+          {
+              ans = ans^nums[i];
+          }
+      
+       return ans; 
+      }
+};
